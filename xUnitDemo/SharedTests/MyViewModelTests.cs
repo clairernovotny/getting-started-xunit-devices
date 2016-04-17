@@ -34,5 +34,11 @@ namespace SharedTests
             // assert
             Assert.Equal(result, actual);
         }
+
+        [SkippableFact]
+        public void TestThatShouldOnlyRunOnMonday()
+        {
+            Skip.If(DateTime.Today.DayOfWeek != DayOfWeek.Monday, "This test only runs on Mondays");
+        }
     }
 }
