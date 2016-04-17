@@ -9,5 +9,6 @@
     <Import_RootNamespace>SharedTests</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MyViewModelTests.cs" />
   </ItemGroup>
 </Project>
